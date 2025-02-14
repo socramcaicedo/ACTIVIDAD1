@@ -1,10 +1,13 @@
 package resultado1;
 
 
-	import java.util.Iterator;
+	import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 	import java.util.Scanner;
+import java.util.stream.Collectors;
 
 	public class actividad1  {
 
@@ -66,6 +69,14 @@ import java.util.Random;
 			 } else {
 				 System.out.println("Los cantidad de numeros impares del vector 2 es mayor que las del vector 1");
 			 }
+			 System.err.println("\n______________________________________________________________________________");
+			 System.err.println("PUNTO C");
+			 System.out.println("Vector 1 ordenado de forma descendente: " +
+		                Arrays.stream(vecUno).boxed().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+			 
+			 System.out.println("Vector 2 ordenado de forma descendente: " +
+		                Arrays.stream(vecDos).boxed().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+			 
 			
 			 
 			 
